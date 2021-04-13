@@ -1,24 +1,39 @@
 #include <calculator_operations.h>
 
-int add(int operand1, int operand2)
+void add(int a,int b)
 {
-    return operand1 + operand2;
+    int c=a+b;
+    printf("%d",c);
 }
-
-int subtract(int operand1, int operand2)
-{
-    return operand1 - operand2;
+void sub(int a,int b){
+    int c=0;
+    if(a>b){
+        c=a-b;
+    }
+    else{
+        c=b-a;
+    }
+    printf("%d",c);
 }
-
-int multiply(int operand1, int operand2)
-{
-    return operand1 * operand2;
+void mult(int a,int b){
+    int c=a*b;
+    printf("%d",c);
 }
-
-int divide(int operand1, int operand2)
-{
-    if(0 == operand2)
-        return 0;
-    else
-        return operand1 / operand2;
+void div(int a,int b){
+    int c=0;
+    if(b==0){
+        printf("Invalid");
+    }
+    else{
+        c=a/b;
+    }
+    printf("%d",c);
+}
+void power(int a,int b){
+    int c=pow(a,b);
+    printf("%d",c);
+}
+void mod(int a,int b){
+    int c=a%b;
+    printf("%d",c);
 }
